@@ -1,3 +1,4 @@
+#![allow(unused)]
 fn main() {
     let xe = 5;
     // let y = Box::new(x);
@@ -21,6 +22,15 @@ fn main() {
      let mut a = 10;
      println!("{}",a); // value a is 10 
      a = 11;
-     println!("{}", a) // value a is 11
-     
+     println!("{}", a); // value a is 11
+
+     // Being unable to change the value of a variable might have reminded you of another programming concept that most other languages have: constants. 
+     // Like immutable variables, constants are values that are bound to a name and are not allowed to change, but there are a few differences between constants and variables.
+     // First, you aren’t allowed to use mut with constants. Constants aren’t just immutable by default—they’re always immutable.
+     // Second, you need declared by data types
+     // third variable name must upper case
+    
+     const MAX: i32 = 23;
+     println!("{}", MAX);
+
 }
